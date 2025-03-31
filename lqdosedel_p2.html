@@ -6,8 +6,82 @@
     <title>Business Anlaytics Student Survey Page 2</title>
 </head>
 <body>
-    <h1>Business Anlaytics Student Survey Page 2</h1>
-    <p>Second set of questions.</p>
+    <h1>Business Anlaytics Student Survey</h1>
+    <form novalidate action="lqdosedel_ty.html">
+        <p>I am finishing my</p>
+        <label>
+            <input type="radio" id="first" name="year" value="1"> first year at Iowa
+        </label>
+        
+        <label>
+            <input type="radio" id="second" name="year" value="2"> second year at Iowa
+        </label>
+        
+        <label>
+            <input type="radio" id="third" name="year" value="3"> third year at Iowa
+        </label>
+        
+        <label>
+            <input type="radio" id="fourth" name="year" value="4"> fourth year at Iowa
+        </label>
+        
+        <label>
+            <input type="radio" id="fifth" name="year" value="5"> fifth or more year at Iowa
+        </label>
+        
+        <fieldset>
+            <legend> BAIS core class I have completed </legend>
+              <label for="info-systems">
+                <input type="checkbox" id="info-systems" name="classes" value ="info-systems"> Information Systems
+              </label>    
+              <label for="operations">
+                <input type="checkbox" id="operations" name="classes" value="operations"> Operations
+              </label>
+              <label for="foundations">
+                <input type="checkbox" id="foundations" name="classes" value="foundations"> Foundations of Business Analytics
+              </label>
+              <label for="comp-thinking">
+                <input type="checkbox" id="comp-thinking" name="classes" value="comp-thinking"> Computational Thinking
+              </label>
+              <label for="database">
+                <input type="checkbox" id="database" name="classes" value="database"> Database Management
+              </label>
+              <label for="wrangling">
+                <input type="checkbox" id="wrangling" name="classes" value="wrangling"> Data Wrangling
+              </label>
+              <label for="mining">
+                <input type="checkbox" id="mining" name="classes" value="mining"> Data Mining
+              </label>
+              <label for="capstone">
+                <input type="checkbox" id="capstone" name="classes" value="capstone"> BAIS Capstone
+              </label>
+          </fieldset> 
 
+<button type="submit">
+    Finish
+  </button>      
+</form>
+<footer>
+    <p>Page 2 of 2</p>
+</footer>
+<script>
+    (function () {
+      "use strict";
+      const forms = document.querySelectorAll("form");
+      Array.from(forms).forEach((form) => {
+        form.addEventListener(
+          "submit",
+          (event) => {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    })();
+  </script>
 </body>
 </html>

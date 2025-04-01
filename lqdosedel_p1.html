@@ -3,34 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Anlaytics Student Survey Page 1</title>
+    <title>Business Analytics Student Survey Page 1</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="https://kit.fontawesome.com/8ddc2ace5f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-<h1>Business Anlaytics Student Survey</h1>
+
 <form novalidate action="lqdosedel_p2.html">
-<div>
-    <label> 
-        My home country is
-        <input type="text" id="hcountry" name="home-country" required autofocus>
-    </label> 
+
+<div class="container py-5 text-center">
+
+<h1 class="text-center mb-4">Business Analytics Student Survey</h1>
+
+<div class="mb-3">
+    <label for="hcountry" class="form-label">My home country is</label>
+    <input type="text" class="form-control" id="hcountry" name="home-country" required autofocus>
 </div>
 
-<div>
-    <label> 
-        My home town is 
-        <span class="tooltip">
-            <i class="fa-solid fa-circle-info"></i>
-            <span class="tooltip tooltiptext">What town did you live in before coming to college?</span>
+<div class="mb-3">
+    <label for="htown" class="form-label">My home town is
+        <span class="my-tooltip">
+            <i class="fa-solid fa-circle-info fontawesome"></i>
+            <span class="my-tooltip tooltiptext">What town did you live in before coming to college?</span>
         </span>
-        <input type="text" id="htown" name="home-town" required>
-    </label> 
+    </label>
+    <input type="text" class="form-control" id="htown" name="home-town" required>
 </div>
 
-<div>
-    <label>My home state is
-    <select name="state" id="state-select">
+<div class="mb-3">
+    <label for="state-select" class="form-label">My home state is</label>
+    <select class="form-select" name="state" id="state-select" required>
         <option value="">-- choose state/territory --</option>
         <option value="AL">AL</option>
         <option value="AK">AK</option>
@@ -91,13 +94,11 @@
         <option value="PR">PR - Puerto Rico</option>
         <option value="VI">VI - U.S. Virgin Islands</option>
     </select>
-    </label>
 </div>
 
-<div>
-    <label>
-    My impression of the BAIS major is
-    <select name="impression" id="impression-scale" required>
+<div class="mb-3">
+    <label for="impression-scale" class="form-label">My impression of the BAIS major is</label>
+    <select class="form-select" name="impression" id="impression-scale" required>
         <option value="">-- choose option --</option>
         <option value="5">Very positive</option>
         <option value="4">Somewhat positive</option>
@@ -105,16 +106,20 @@
         <option value="2">Somewhat negative</option>
         <option value="1">Very negative</option>
     </select>
-    </label>
 </div>
 
-<button type="submit">
+<button type="submit" class="btn btn-primary w-50">
     Next
-  </button>      
+  </button>
+
+</div>    
+
 </form>
-    <footer>
-        <p>Page 1 of 2</p>
-    </footer>
+
+<footer class="mt-4 text-center">
+    <p>Page 1 of 2</p>
+</footer>
+
 <script>
     (function () {
       "use strict";
@@ -134,5 +139,6 @@
       });
     })();
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

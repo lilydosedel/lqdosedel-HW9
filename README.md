@@ -11,7 +11,7 @@ This web form conforms to best practices for forms in numerous ways.
 
 First, the correct input type is used for each question within the form so that the data collected remains clean and easily analyzable. For example, questions that are likely to have various different answers across all respondents have a text box that allows users to type their own answer. Meanwhile, the responses that are likely to fall into specific categories use a dropdown menu such as the state question. Additionally, asking students their impression of the major uses a likert scale, which results in data that can be measured on the same scale. 
 
-Some other details of the form cerfify best practices as well. The page numbers at the bottom of the form tell users where they are within the form. The beginning page introduces the form and sets expectations, while the last page satisfies the user by letting them know the survey is done and their answer has been saved. The form is also dynamic, meaning it's usable on all devices. 
+Some other details of the form cerfify best practices as well. The page numbers at the bottom of the form tell users where they are within the form. The beginning page introduces the form and sets expectations, while the last page satisfies the user by letting them know the survey is done and their answer has been saved. The form is also responsive, meaning it's usable on all devices. 
 
 Additionally, this form is WCAG compliant, as described below. 
 

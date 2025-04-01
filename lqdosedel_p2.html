@@ -11,86 +11,100 @@
     <h1 class="text-center mb-4">Business Analytics Student Survey</h1>
     <form novalidate action="lqdosedel_ty.html">
 
-<label class="form-label">I am finishing my</label>
-<div class="mb4 text-primary">
-    <div class="mb-3">
-        <label class="form-check-label">
-            <input type="radio" id="first" name="year" value="1" class="form-check-input"> first year at Iowa
-        </label>
+    <label class="form-label">I am finishing my</label>
+    <div class="mb-4 text-primary">
+        <div class="mb-3">
+            <label class="form-check-label">
+                <input type="radio" id="first" name="year" value="1" class="form-check-input" required> first year at Iowa
+            </label>
+        </div>
+        <div class="mb-3">
+            <label class="form-check-label">
+                <input type="radio" id="second" name="year" value="2" class="form-check-input" required> second year at Iowa
+            </label>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-check-label">
+                <input type="radio" id="third" name="year" value="3" class="form-check-input" required> third year at Iowa
+            </label>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-check-label">
+                <input type="radio" id="fourth" name="year" value="4" class="form-check-input" required> fourth year at Iowa
+            </label>
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-check-label">
+                <input type="radio" id="fifth" name="year" value="5" class="form-check-input" required> fifth or more year at Iowa
+            </label>
+        </div>
     </div>
-    <div class="mb-3">
-        <label class="form-check-label">
-            <input type="radio" id="second" name="year" value="2" class="form-check-input"> second year at Iowa
-        </label>
-    </div>
-    
-    <div class="mb-3">
-        <label class="form-check-label">
-            <input type="radio" id="third" name="year" value="3" class="form-check-input"> third year at Iowa
-        </label>
-    </div>
-    
-    <div class="mb-3">
-        <label class="form-check-label">
-            <input type="radio" id="fourth" name="year" value="4" class="form-check-input"> fourth year at Iowa
-        </label>
-    </div>
-    
-    <div class="mb-3">
-        <label class="form-check-label">
-            <input type="radio" id="fifth" name="year" value="5" class="form-check-input"> fifth or more year at Iowa
-        </label>
-    </div>
-</div>
+        
 
 
-   <div class="mb-4">
-    <fieldset>
-        <label class="form-label">BAIS core class(es) I have completed</label>
-        <div class="text-center text-primary">
-        <div class="mb-3">
-            <label for="info-systems" class="form-check-label">
-                <input type="checkbox" id="info-systems" name="classes" value="info-systems" class="form-check-input"> Information Systems
-            </label>
-        </div>
-        <div class="mb-3">
-            <label for="operations" class="form-check-label">
-                <input type="checkbox" id="operations" name="classes" value="operations" class="form-check-input"> Operations
-            </label>
-        </div>
-        <div class="mb-3">
-            <label for="foundations" class="form-check-label">
-                <input type="checkbox" id="foundations" name="classes" value="foundations" class="form-check-input"> Foundations of Business Analytics
-            </label>
-        </div>
-        <div class="mb-3">
-            <label for="comp-thinking" class="form-check-label">
-                <input type="checkbox" id="comp-thinking" name="classes" value="comp-thinking" class="form-check-input"> Computational Thinking
-            </label>
-        </div>
-        <div class="mb-3">
-            <label for="database" class="form-check-label">
-                <input type="checkbox" id="database" name="classes" value="database" class="form-check-input"> Database Management
-            </label>
-        </div>
-        <div class="mb-3">
-            <label for="wrangling" class="form-check-label">
-                <input type="checkbox" id="wrangling" name="classes" value="wrangling" class="form-check-input"> Data Wrangling
-            </label>
-        </div>
-        <div class="mb-3">
-            <label for="mining" class="form-check-label">
-                <input type="checkbox" id="mining" name="classes" value="mining" class="form-check-input"> Data Mining
-            </label>
-        </div>
-        <div class="mb-3">
-            <label for="capstone" class="form-check-label">
-                <input type="checkbox" id="capstone" name="classes" value="capstone" class="form-check-input"> BAIS Capstone
-            </label>
-        </div>
-        </div>
-    </fieldset>
-</div>
+    <div class="mb-4">
+        <fieldset>
+            <label class="form-label">BAIS core class(es) I have completed</label>
+            <div class="text-center text-primary">
+                <div class="mb-3">
+                    <label for="info-systems" class="form-check-label">
+                        <input type="checkbox" id="info-systems" name="classes" value="info-systems" class="form-check-input"> Information Systems
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="operations" class="form-check-label">
+                        <input type="checkbox" id="operations" name="classes" value="operations" class="form-check-input"> Operations
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="foundations" class="form-check-label">
+                        <input type="checkbox" id="foundations" name="classes" value="foundations" class="form-check-input"> Foundations of Business Analytics
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="comp-thinking" class="form-check-label">
+                        <input type="checkbox" id="comp-thinking" name="classes" value="comp-thinking" class="form-check-input"> Computational Thinking
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="database" class="form-check-label">
+                        <input type="checkbox" id="database" name="classes" value="database" class="form-check-input"> Database Management
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="wrangling" class="form-check-label">
+                        <input type="checkbox" id="wrangling" name="classes" value="wrangling" class="form-check-input"> Data Wrangling
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="mining" class="form-check-label">
+                        <input type="checkbox" id="mining" name="classes" value="mining" class="form-check-input"> Data Mining
+                    </label>
+                </div>
+                <div class="mb-3">
+                    <label for="capstone" class="form-check-label">
+                        <input type="checkbox" id="capstone" name="classes" value="capstone" class="form-check-input"> BAIS Capstone
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+    <!-- JavaScript to validate at least one checkbox -->
+    <script>
+      document.querySelector("form").addEventListener("submit", function(event) {
+        // Get all the checkboxes
+        const checkboxes = document.querySelectorAll('input[name="classes"]:checked');
+        
+        // If no checkbox is selected, show an alert and prevent form submission
+        if (checkboxes.length === 0) {
+          alert('Please select at least one BAIS core class.');
+          event.preventDefault();  // Prevent form submission
+        }
+      });
+    </script>
 
 <div class="mb-3">
     <button type="submit" class="btn btn-primary w-50">
